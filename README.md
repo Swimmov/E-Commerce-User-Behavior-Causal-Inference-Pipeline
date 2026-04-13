@@ -89,13 +89,7 @@ bounce_rate ──→ avg_session_time ──→ cart_items ──→ purchase
                                     ▲
                             discount_seen
 ```
-
-
-
-<img width="1519" height="1114" alt="DAG_E-comm_1" src="https://github.com/user-attachments/assets/717d6650-3ef2-41e2-9dac-ea427966a00b" />
-
-
-
+<img width="1519" height="1114" alt="DAG_E-comm_1" src="https://github.com/user-attachments/assets/aef3e5e2-a4f8-44a0-aa6e-68674774f983" />
 
 **Reading the DAG:** Bounce rate affects purchase both directly and through a mediation chain — users who don't bounce stay longer (`avg_session_time`), fill their carts (`cart_items`), and buy. `discount_seen` has an independent direct path to purchase with no confounders in this graph.
 
@@ -199,6 +193,8 @@ previous_purchases pruned  (no directed path to purchase after tier cleanup)
 ---
 
 ## DoWhy ATE & Confounder Robustness
+
+<img width="1591" height="1239" alt="DAG_E-comm_2_confounder" src="https://github.com/user-attachments/assets/3ebf0f0b-238a-4811-a72d-34dd1827c79a" />
 
 ```python
 # Primary causal question
