@@ -90,7 +90,12 @@ bounce_rate ──→ avg_session_time ──→ cart_items ──→ purchase
                             discount_seen
 ```
 
-<img width="563" height="338" alt="DAG_E-comm" src="https://github.com/user-attachments/assets/9e850796-4c67-403b-8fea-b897b79ea36d" />
+
+
+<img width="1519" height="1114" alt="DAG_E-comm_1" src="https://github.com/user-attachments/assets/717d6650-3ef2-41e2-9dac-ea427966a00b" />
+
+
+
 
 **Reading the DAG:** Bounce rate affects purchase both directly and through a mediation chain — users who don't bounce stay longer (`avg_session_time`), fill their carts (`cart_items`), and buy. `discount_seen` has an independent direct path to purchase with no confounders in this graph.
 
